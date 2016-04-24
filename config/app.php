@@ -123,6 +123,10 @@ return [
 
     'providers' => [
 
+
+        Collective\Html\HtmlServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
+
         /*
          * Laravel Framework Service Providers...
          */
@@ -170,6 +174,13 @@ return [
     */
 
     'aliases' => [
+
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+
+        'Datatables'  =>  Yajra\Datatables\Facades\Datatables\App::class,
+
 
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,

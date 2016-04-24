@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Emails extends Model
 {
-    protected $table = 'emails';
+    protected $table = 'mailboxes';
     /**
      * The attributes that are mass assignable.
      *
